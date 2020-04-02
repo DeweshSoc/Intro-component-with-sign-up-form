@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class=" col-12 col-md-6 container1">
+          <h1 class="big-heading">Learn to code by watching others</h1>
+
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 container2">
+          <div class="btn btn1 btn-block">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </div>
+
+          <div class="wrapper">
+            <div class="form-group">
+              <form name="Form" onsubmit="return formValidation()" novalidate>
+                <input
+                  type="text"
+                  id="first-name"
+                  class="form-control"
+                  name="helptext1"
+                  placeholder="First Name"
+                  aria-describedby="helpId"
+                />
+                <small id="helptext1" class="help"
+                  >First name cannot be empty</small
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  class="form-control"
+                  name="helptext2"
+                  placeholder="Last Name"
+                  aria-describedby="helpId"
+                />
+                <small id="helptext2" class="help"
+                  >Last name cannot be empty</small
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  name="helptext3"
+                  placeholder="Email Address"
+                  aria-describedby="helpId"
+                />
+                <small id="helptext3" class="help"
+                  >Looks like this is not an email</small
+                >
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  name="helptext4"
+                  placeholder="Password"
+                  aria-describedby="helpId"
+                />
+                <small id="helptext4" class="help"
+                  >Password cannot be empty</small
+                >
+                <input
+                  type="submit"
+                  value="CLAIM YOUR FREE TRIAL"
+                  class="btn btn2 btn-block"
+                />
+              </form>
+            </div>
+            <small id="passwordHelpBlock" class="terms-agreement"
+              >By clicking the button, you are agreeing to our
+              <span class="terms-conditions">Terms and Services</span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://github.com/DeweshSoc">Dewesh Jha</a>.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
